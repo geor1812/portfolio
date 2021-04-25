@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "description": "Personal Portfolio",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "cross-env PORT=3000 nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geor1812/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "nodejs"
+  ],
+  "author": "George Ursachi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geor1812/portfolio/issues"
+  },
+  "homepage": "https://github.com/geor1812/portfolio#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3"
+  }
+}
