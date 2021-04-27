@@ -5,6 +5,7 @@ const colorDictionary = {
     industry: "bg-danger"
 };
 
+//Using fetch to get the skills and dynamically adding them to the page
 (async function getSkills() {
     try {
         const response = await fetch("/api/skills");
@@ -51,3 +52,17 @@ const colorDictionary = {
         console.log(error);
     }
 })();
+
+//Making the sidemenu sticky at the top
+/*
+window.onscroll = () => {stickyToggle()};
+const sidemenu = document.getElementById("sidemenu");
+const sticky = sidemenu.offsetTop;
+stickyToggle = () => {
+    if (window.pageYOffset >= sticky) {
+        sidemenu.classList.add("sticky")
+    } else {
+        sidemenu.classList.remove("sticky");
+    }
+};
+*/
