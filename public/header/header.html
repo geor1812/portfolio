@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script language="javascript" src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script language="javascript" src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/header/header.css"/>
     <title>George's Portfolio</title>
-    
 </head>
 
 <body>
@@ -20,22 +19,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li id="home" class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="/skills">Skills</a>
+            <li id="skills" class="nav-item">
+              <a class="nav-link" href="/skills">Skills</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="/projects">Projects</a>
+            <li id="projects" class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="/education">Education</a>
+            <li id="education" class="nav-item">
+              <a class="nav-link" href="/education">Education</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="/contact">Contact</a>
+            <li id="contact" class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
+    <script src="/header/header.js"></script>
 </body>
