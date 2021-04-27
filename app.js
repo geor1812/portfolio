@@ -5,6 +5,10 @@ app.use(express.json());
 app.use(express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use(express.static(__dirname + "/public"));
 
+const skillsRouter = require("./routes/skills.js");
+
+app.use(skillsRouter.router);
+
 const fs = require("fs");
 
 const header = fs.readFileSync(__dirname + "/public/header/header.html", "utf-8");
