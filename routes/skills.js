@@ -24,6 +24,11 @@ const skills = [{
         type: "language",
         progress: 3
     }, {
+        title: "Processing",
+        description: "I have created multiple generative art projects using Processing, both in 2D and 3D. I have a good understanding of how to use mathematical functions to generate visual art.",
+        type: "language",
+        progress: 3
+    }, {
         title: "SQL",
         description: "I have a good understanding of all the core concepts of the language as well as relation databases in general, which I have used in numerous projects.",
         type: "language",
@@ -38,6 +43,11 @@ const skills = [{
         description: "I am able to use and understand CSS, but I prefer using styling libraries or frameworks",
         type: "language",
         progress: 2
+    }, {
+        title: "FoxDot",
+        description: "I have recently started learning FoxDot for the purpose of live-coding music. This being a creative language, I am currently in the process of discovering what works and how.",
+        type: "language",
+        progress: 1
     }
 ];
 
