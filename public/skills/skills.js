@@ -11,14 +11,12 @@ const colorDictionary = {
         const response = await fetch("/api/skills");
         const result = await response.json();
 
-        const languageDiv = document.getElementById("language");
-
         result.data.map(skill => {
             const rowDiv = document.createElement("div");
             rowDiv.className = "row";
 
             const cardDiv = document.createElement("div");
-            cardDiv.className = "card bg-dark w-75 my-2";
+            cardDiv.className = "card bg-dark w-75 my-3";
 
             const cardBodyDiv = document.createElement("div");
             cardBodyDiv.className = "card-body";
@@ -39,7 +37,10 @@ const colorDictionary = {
             progressBar.classList.add(colorDictionary[skill.type]);
             progressBar.setAttribute("style", `width: ${skill.progress * 20}%`);
 
-            languageDiv.appendChild(rowDiv);
+
+            const section = document.getElementById(skill.type);
+            
+            section.appendChild(rowDiv);
             rowDiv.appendChild(cardDiv);
             cardDiv.appendChild(cardBodyDiv);
             cardBodyDiv.appendChild(skillTitle);
