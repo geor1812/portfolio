@@ -6,8 +6,10 @@ app.use(express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use(express.static(__dirname + "/public"));
 
 const skillsRouter = require("./routes/skills.js");
+const projectsRouter = require("./routes/projects.js");
 
 app.use(skillsRouter.router);
+app.use(projectsRouter.router);
 
 const fs = require("fs");
 
