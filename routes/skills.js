@@ -1,13 +1,5 @@
 const router = require("express").Router();
 
-/*
-    Skills Schema
-        title: string
-        description: string
-        type: string
-        progress: number(1 to 5)
-*/
-
 const skills = [{
         title: "Java",
         description: "I have studied Java for two years and have gained a good understanding of object oriented programming and the most used elements of the language.",
@@ -65,52 +57,52 @@ const skills = [{
         progress: 3
     }, {
         title: "React",
-        description: "",
+        description: "As a fan of component-based front-end development, I have learned and used React in multiple projects. I am planning on studying it in depth and making React my go-to frontend library",
         type: "fandl",
         progress: 3
     }, {
         title: "Spring Boot",
-        description: "",
+        description: "A big part of my studies has been using Spring Boot to set up fully functional and secure servers that act as REST APIs.",
         type: "fandl",
         progress: 2
     }, {
         title: "Bootstrap",
-        description: "",
+        description: "Bootstrap is my go-to styling library for building responsive websites. I have a very good understanding of Bootstrap's grid-based approach and the way classes to make styling an easy task.",
         type: "fandl",
         progress: 4
     }, {
         title: "Docker",
-        description: "",
+        description: "I have experience with using Docker containers to separate the different moving parts of my projects. I am able to use docker commands and docker files to find the right solution for the project I am working on.",
         type: "service",
         progress: 3
     }, {
         title: "Amazon Web Services",
-        description: "",
+        description: "I used AWS for deploying full-stack applications and I am able to use a limited amount of their available services: RDS, EC2 and Elastic Beanstalk",
         type: "service",
         progress: 1
     }, {
         title: "Heroku",
-        description: "",
+        description: "Most of my complete projects, which use a wide variety of programming languages and tools have been deployed to Heroku. I am able to host databases, back-end servers as well as front-end applications.",
         type: "service",
         progress: 4
     }, {
         title: "Agile Development",
-        description: "",
+        description: "I am a firm believer that agile development, in most cases, is the industry's best development methodology. I understand the different roles and practices employed in an agile environment. I have also used agile methodologies in conjunction with Scrum.",
         type: "industry",
         progress: 4
     }, {
         title: "Jenkins",
-        description: "",
+        description: "I am able to use Jenkins for basic building, testing and deploying tasks. I have also implemented CI/CD pipelines with Jenkins, where the applications were deployed to Amazon Web Services.",
         type: "service",
         progress: 2
     }, {
         title: "Networking",
-        description: "",
+        description: "I have a good understanding of networking: the different layers, protocols and data units used. I also have a good grasp of network security concepts.",
         type: "industry",
         progress: 3
     }, {
         title: "CI/CD",
-        description: "",
+        description: "I understand the CI/CD cycle and have implemented CI/CD pipelines using Jenkins for both front-end and back-end applications.",
         type: "industry",
         progress: 1
     }
