@@ -7,9 +7,13 @@ app.use(express.static(__dirname + "/public"));
 
 const skillsRouter = require("./routes/skills.js");
 const projectsRouter = require("./routes/projects.js");
+const educationRouter = require("./routes/education.js");
+const contactRouter = require("./routes/contact.js");
 
 app.use(skillsRouter.router);
 app.use(projectsRouter.router);
+app.use(educationRouter.router);
+app.use(contactRouter.router);
 
 const fs = require("fs");
 
