@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(__dirname + "/node_modules/bootstrap/dist"));
 app.use(express.static(__dirname + "/public"));
+app.use(express.urlencoded({ extended: true }));
 
 const skillsRouter = require("./routes/skills.js");
 const projectsRouter = require("./routes/projects.js");
